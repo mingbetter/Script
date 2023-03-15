@@ -10,5 +10,6 @@
 # chmod 777 /var/www/html/vpnclient.mobileconfig
 ipstr=""
 ipstr=`curl ifconfig.me`
-echo -e "\n 描述文件如下："
+echo  "\n 描述文件如下："
 echo http://$ipstr/vpnclient.mobileconfig
+echo ""
