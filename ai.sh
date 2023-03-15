@@ -6,8 +6,9 @@
 # sudo ufw allow 'Nginx Full'
 # sudo systemctl restart nginx
 # #移动
-cp /root/vpnclient.mobileconfig /var/www/html
-chmod 777 /var/www/html/vpnclient.mobileconfig
+# cp /root/vpnclient.mobileconfig /var/www/html
+# chmod 777 /var/www/html/vpnclient.mobileconfig
 ipstr=""
 ipstr=`curl ifconfig.me`
-echo “http://$ipstr/vpnclient.mobileconfig\n”
+echo -e "\n 描述文件如下："
+echo http://$ipstr/vpnclient.mobileconfig
