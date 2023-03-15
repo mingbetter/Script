@@ -1,4 +1,4 @@
-sudo apt-get install nginx
-sudo systemctl status nginx
-sudo ufw allow 'Nginx Full'
-sudo systemctl restart nginx
+apt-get install nginx
+systemctl status nginx
+ufw allow 'Nginx Full'
+systemctl restart nginx
