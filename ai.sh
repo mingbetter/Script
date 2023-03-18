@@ -1,10 +1,9 @@
+#一键安装vpn
+curl -fsSL https://git.io/vpnstart -o vpn.sh && sudo sh vpn.sh
 #配置nginx
-apt-get -yqq update
 sudo apt-get -yqq install nginx
 sudo systemctl status nginx
 sudo systemctl restart nginx
-#一键安装vpn
-curl -fsSL https://git.io/vpnstart -o vpn.sh && sudo sh vpn.sh
 #移动凭证
 cp /root/vpnclient.mobileconfig /var/www/html
 chmod 777 /var/www/html/vpnclient.mobileconfig
