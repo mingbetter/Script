@@ -1,5 +1,6 @@
 #配置nginx
-sudo apt-get -y install nginx
+apt-get -yqq update
+sudo apt-get -yqq install nginx
 sudo systemctl status nginx
 sudo systemctl restart nginx
 #一键安装vpn
