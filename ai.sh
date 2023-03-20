@@ -10,7 +10,9 @@ chmod 777 /var/www/html/vpnclient.mobileconfig
 #打印地址
 ipstr=""
 ipstr=`curl ifconfig.me`
+address="http://$ipstr/vpnclient.mobileconfig"
+curl https://api.day.app/cMFF5VGjf2ocuttGwE22m6/VPN凭证地址?url=$address
 echo "描述文件如下："
 echo ""
-echo http://$ipstr/vpnclient.mobileconfig
+echo $address
 echo ""
